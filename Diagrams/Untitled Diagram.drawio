@@ -1,9 +1,17 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1.1 Safari/605.1.15" version="26.0.9">
   <diagram name="Page-1" id="Fa01kgOjmWI3t11_XYtY">
-    <mxGraphModel dx="1095" dy="666" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="751" dy="457" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="o8ZFF0kI_puRNXqCPX-2-33" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=1;startArrow=classic;" edge="1" parent="1" source="2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="201" y="70" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="200" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="2" value="Aceptar carros &#xa;desde abajo" style="rounded=1;arcSize=20;strokeWidth=2" parent="1" vertex="1">
           <mxGeometry x="145.5" y="90" width="110" height="40" as="geometry" />
         </mxCell>
@@ -33,8 +41,8 @@
         <mxCell id="5" value="Aceptar carros &#xa;desde derecha" style="rounded=1;arcSize=20;strokeWidth=2" parent="1" vertex="1">
           <mxGeometry x="230.5" y="190" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="o8ZFF0kI_puRNXqCPX-2-9" value="Semáforo" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="170.5" y="40" width="60" height="30" as="geometry" />
+        <mxCell id="o8ZFF0kI_puRNXqCPX-2-9" value="Estados del semáforo" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="161" y="20" width="79.5" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
