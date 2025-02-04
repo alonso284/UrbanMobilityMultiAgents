@@ -77749,7 +77749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7754507003050533373, guid: 477e3f48a53552902b0168d0c27aa011, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.5101213
+      value: 5.51
       objectReference: {fileID: 0}
     - target: {fileID: 7754507003050533373, guid: 477e3f48a53552902b0168d0c27aa011, type: 3}
       propertyPath: m_LocalPosition.y
@@ -77757,7 +77757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7754507003050533373, guid: 477e3f48a53552902b0168d0c27aa011, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.149982
+      value: -10.82
       objectReference: {fileID: 0}
     - target: {fileID: 7754507003050533373, guid: 477e3f48a53552902b0168d0c27aa011, type: 3}
       propertyPath: m_LocalRotation.w
@@ -92071,7 +92071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 557ada6a8e2a79598b1c9f003552c433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  circlePrefab: {fileID: 3950570251907690767, guid: e068a12dd332d696d994579cc33b5cfb, type: 3}
+  trafficLightPrefab: {fileID: 3950570251907690767, guid: e068a12dd332d696d994579cc33b5cfb, type: 3}
 --- !u!114 &1906860812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92086,8 +92086,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carPrefab: {fileID: 6977865433255476039, guid: 477e3f48a53552902b0168d0c27aa011, type: 3}
   pedestrianPrefab: {fileID: 1605290620452664386, guid: 58ef644de6b682e738f6b837e8823e55, type: 3}
-  moveSpeed: 5
-  rotationSpeed: 0.8
 --- !u!1 &1911554780
 GameObject:
   m_ObjectHideFlags: 0
@@ -103853,7 +103851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2093316194569858808, guid: 58ef644de6b682e738f6b837e8823e55, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.17
+      value: -10.27
       objectReference: {fileID: 0}
     - target: {fileID: 2093316194569858808, guid: 58ef644de6b682e738f6b837e8823e55, type: 3}
       propertyPath: m_LocalRotation.w
@@ -103910,7 +103908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7754507003050533373, guid: 477e3f48a53552902b0168d0c27aa011, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.25
+      value: -11.58
       objectReference: {fileID: 0}
     - target: {fileID: 7754507003050533373, guid: 477e3f48a53552902b0168d0c27aa011, type: 3}
       propertyPath: m_LocalRotation.w
@@ -104010,7 +104008,7 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 1478866313}
   - {fileID: 7597117802422820106}
-  - {fileID: 1906860810}
   - {fileID: 7794866170828138411}
   - {fileID: 1589220741}
   - {fileID: 5038243602349960458}
+  - {fileID: 1906860810}
