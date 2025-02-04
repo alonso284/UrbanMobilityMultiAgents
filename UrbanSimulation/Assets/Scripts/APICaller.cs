@@ -6,13 +6,14 @@ using Newtonsoft.Json;
 
 public class APICaller : MonoBehaviour
 {
-    private string baseUrl = "http://127.0.0.1:5000";
-    private string mobileRequest = "/mobile_agent_state/";
-    private float interval = 0.5f;
-
-    private int STEPS = 60;
+    private const string BASE_URL = "http://127.0.0.1:5000";
+    private const string MOBILE_REQUEST_PATH = "/mobile_agent_state/";
+    private const string STATIC_REQUEST_PATH = "/static_agent_state/";
+    private const float INTERVAL = 0.4f;
+    private const int STEPS = 60;
 
     public AgentController agentController;
+    public StaticAgentController staticAgentController;
 
     void Start()
     {
@@ -21,16 +22,19 @@ public class APICaller : MonoBehaviour
 
     private IEnumerator CallAPI()
     {
-        for (int i = 1; i < STEPS; i++)
+        for (int step = 1; step < STEPS; step++)
         {
-            yield return StartCoroutine(GetRequest(i));
-            yield return new WaitForSeconds(interval);
+            Debug.Log($"Step: {step}");
+            string urlMobile = BASE_URL + MOBILE_REQUEST_PATH + step;
+            string urlStatic = BASE_URL + STATIC_REQUEST_PATH + step;
+            yield return StartCoroutine(GetRequest(step, urlStatic, true));
+            yield return StartCoroutine(GetRequest(step, urlMobile, false));
+            yield return new WaitForSeconds(INTERVAL);
         }
     }
 
-    private IEnumerator GetRequest(int step)
+    private IEnumerator GetRequest(int step, string url, bool staticAgent)
     {
-        string url = baseUrl + mobileRequest + step;
         Debug.Log($"Requesting: {url}");
         using (UnityWebRequest request = UnityWebRequest.Get(url))
         {
@@ -42,15 +46,21 @@ public class APICaller : MonoBehaviour
             }
             else
             {
-                Debug.Log($"Response: {request.downloadHandler.text}");
                 string jsonResponse = request.downloadHandler.text;
-                ParseAndUpdate(jsonResponse);
+                if (staticAgent)
+                {
+                    ParseAndUpdateStaticAgents(jsonResponse);
+                }
+                else
+                {
+                    ParseAndUpdateMobileAgents(jsonResponse);
+                }
             }
         }
     }
 
 
-    void ParseAndUpdate(string jsonResponse)
+    void ParseAndUpdateMobileAgents(string jsonResponse)
     {
 
         List<MobileDataEntry> rawData = JsonConvert.DeserializeObject<List<MobileDataEntry>>(jsonResponse);
@@ -60,12 +70,23 @@ public class APICaller : MonoBehaviour
         foreach (var item in rawData)
         {
             agentData[item.id] = new MobileAgentData(item.type, item.x, item.y);
-            
-            // Debug.Log($"Agent ID: {item.id}, Position: {item.x}, {item.y}");
         }
         
         agentController.UpdateAgents(agentData);
 
+    }
+
+    void ParseAndUpdateStaticAgents(string jsonResponse)
+    {
+        List<StaticDataEntry> rawData = JsonConvert.DeserializeObject<List<StaticDataEntry>>(jsonResponse);
+
+        Dictionary<int, StaticAgentData> agentData = new Dictionary<int, StaticAgentData>();
+        foreach (var item in rawData)
+        {
+            agentData[item.id] = new StaticAgentData(item.status, item.x, item.y);
+        }
+        
+        staticAgentController.UpdateStaticAgents(agentData);
     }
 
 }
@@ -77,4 +98,13 @@ public class MobileDataEntry
     public int x;
     public int y;
     public string type;
+}
+
+[System.Serializable]
+public class StaticDataEntry
+{
+    public int id;
+    public bool status;
+    public int x;
+    public int y;
 }
