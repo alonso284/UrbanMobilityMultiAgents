@@ -1,0 +1,48 @@
+# Unity generated files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# Asset meta files
+/[Aa]ssets/**/*.meta
+
+# Auto-generated JetBrains Rider plugin files
+.idea/
+.vscode/
+.vscode/settings.json
+.vscode/CodeSnippets/
+
+# Unity3D generated file on crash reports
+sysinfo.txt
+
+# Exclude Crash logs
+**/*.pidb
+
+# Packed Asset Cache
+/[Aa]sset[Bb]undles/
+`*.assetbundle`
+
+# Visual Studio files
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.swp
+*.cache
+
+# Mac and Linux files
+*.DS_Store/*
+ `.DS`
+
+ #Debgp core Notes`
+
+**kicking logs?
