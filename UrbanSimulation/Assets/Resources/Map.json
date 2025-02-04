@@ -1,0 +1,16 @@
+{
+  "map": [
+    ["gr", "gr", "gr", "gr", "sw", "ds", "us", "sw", "gr", "gr", "gr", "gr", "sw", "ds", "us", "sw", "gr", "gr", "ho", "dw", "sw", "ds", "us", "sw", "gr", "gr", "de", "dw", "sw", "ds", "us", "sw", "gr", "gr", "gr", "gr"],
+    ["gr", "gr", "gr", "gr", "ob", "ds", "us", "sw", "gr", "gr", "de", "dw", "sw", "ds", "us", "sw", "dw", "ho", "gr", "gr", "sw", "ds", "us", "sw", "gr", "gr", "ho", "gr", "sw", "ds", "us", "sw", "dw", "ho", "gr", "gr"],
+    ["ho", "gr", "ho", "gr", "sw", "ds", "us", "sw", "dw", "de", "gr", "gr", "sw", "ds", "us", "sw", "gr", "gr", "ho", "gr", "ob", "ds", "us", "sw", "dw", "ho", "dw", "gr", "sw", "ds", "us", "sw", "gr", "gr", "ho", "gr"],
+    ["dw", "gr", "dw", "gr", "sw", "ds", "us", "sw", "gr", "gr", "gr", "gr", "sw", "ds", "us", "sw", "gr", "gr", "dw", "gr", "sw", "ds", "us", "sw", "gr", "gr", "dw", "gr", "sw", "ds", "us", "sw", "gr", "gr", "dw", "gr"],
+    ["sw", "sw", "sw", "sw", "sw", "cw", "cw", "sw", "ob", "sw", "sw", "sw", "sw", "cw", "cw", "sw", "sw", "sw", "sw", "sw", "sw", "cw", "cw", "sw", "ob", "sw", "ob", "sw", "sw", "cw", "cw", "sw", "ob", "sw", "sw", "sw"],
+    ["ls", "ls", "ls", "ls", "cw", "ic", "ic", "cw", "ls", "ls", "ls", "ls", "cw", "ic", "ic", "cw", "ls", "ls", "ls", "ls", "cw", "ic", "ic", "cw", "ls", "ls", "ls", "ls", "cw", "ic", "ic", "cw", "ls", "ls", "ls", "ls"],
+    ["rs", "rs", "rs", "rs", "cw", "ic", "ic", "cw", "rs", "rs", "rs", "rs", "cw", "ic", "ic", "cw", "rs", "rs", "rs", "rs", "cw", "ic", "ic", "cw", "rs", "rs", "rs", "rs", "cw", "ic", "ic", "cw", "rs", "rs", "rs", "rs"],
+    ["sw", "sw", "sw", "sw", "sw", "cw", "cw", "sw", "sw", "sw", "sw", "sw", "sw", "cw", "cw", "sw", "sw", "sw", "sw", "sw", "sw", "cw", "cw", "sw", "sw", "sw", "sw", "sw", "sw", "cw", "cw", "sw", "sw", "sw", "sw", "sw"],
+    ["gr", "dw", "gr", "gr", "sw", "ds", "us", "sw", "gr", "gr", "gr", "gr", "sw", "ds", "us", "sw", "gr", "gr", "ho", "dw", "sw", "ds", "us", "sw", "gr", "gr", "gr", "gr", "sw", "ds", "us", "sw", "gr", "dw", "gr", "gr"],
+    ["gr", "ho", "gr", "gr", "sw", "ds", "us", "sw", "gr", "gr", "ho", "dw", "sw", "ds", "us", "ob", "dw", "de", "gr", "gr", "sw", "ds", "us", "sw", "dw", "ho", "ho", "dw", "ob", "ds", "us", "sw", "gr", "de", "gr", "gr"],
+    ["gr", "gr", "de", "dw", "sw", "ds", "us", "sw", "dw", "ho", "gr", "gr", "ob", "ds", "us", "sw", "gr", "gr", "gr", "gr", "sw", "ds", "us", "sw", "gr", "gr", "gr", "gr", "sw", "ds", "us", "sw", "ob", "gr", "gr", "gr"],
+    ["gr", "gr", "gr", "gr", "sw", "ds", "us", "sw", "gr", "gr", "ho", "dw", "sw", "ds", "us", "sw", "gr", "gr", "gr", "gr", "ob", "ds", "us", "sw", "dw", "ho", "ho", "dw", "sw", "ds", "us", "sw", "dw", "ho", "gr", "gr"]
+  ]
+}
