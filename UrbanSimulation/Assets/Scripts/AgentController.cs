@@ -5,8 +5,8 @@ using System.IO;
 public class AgentController : MonoBehaviour
 {
 
-    public const float MOVE_SPEED = 5.0f;
-    public const float ROTATION_SPEED = 0.8f;
+    public  float MOVE_SPEED = 4f;
+    public  float ROTATION_SPEED = 8f;
     public GameObject carPrefab;
     public GameObject pedestrianPrefab;
     private Dictionary<int, GameObject> carAgents = new Dictionary<int, GameObject>();

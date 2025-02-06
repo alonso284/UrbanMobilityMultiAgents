@@ -8,7 +8,7 @@ using UnityEngine;
         public int y;
         public int z;
 
-        public StaticAgentData(bool status, int x, int y, int z = 0)
+        public StaticAgentData(bool status, int x, int y, int z = 1)
         {
             this.status = status;
             this.x = x;

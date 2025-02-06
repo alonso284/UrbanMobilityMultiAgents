@@ -9,8 +9,8 @@ public class APICaller : MonoBehaviour
     private const string BASE_URL = "http://127.0.0.1:5000";
     private const string MOBILE_REQUEST_PATH = "/mobile_agent_state/";
     private const string STATIC_REQUEST_PATH = "/static_agent_state/";
-    private const float INTERVAL = 0.4f;
-    private const int STEPS = 60;
+    public  float INTERVAL = 0.3f;
+    private const int STEPS = 100;
 
     public AgentController agentController;
     public StaticAgentController staticAgentController;
