@@ -4,7 +4,7 @@ Modelo de movilidad urbana basado en sistemas multiagente para maximizar el fluj
 
 El software simula un escenario con casas y destinos, donde agentes móviles se mueven para llegar a su destino de la manera más eficiente. El enfoque es en la navegación de los peatones en un ambiente donde hay cruces e intersecciones con vehículos.
 
-## Parámtros para evaluar eficiencia del flujo peatonal
+## Parámetros para evaluar eficiencia del flujo peatonal
 
 - **Tiempo promedio de viaje**: Tiempo que toma a un peatón desplazarse de su origen a su destino.
 - **Velocidad promedio**: Velocidad efectiva de los peatones (medida de la distancia desplazada y el tiempo tardado en llegar)
